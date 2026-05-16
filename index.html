@@ -366,7 +366,7 @@ table.data-table { width: 100%; border-collapse: collapse; font-size: 14px; }
   <div class="hero-header">
     <div class="hero-inner" style="padding:16px 32px;">
       <div style="font-size:22px;">🎓</div>
-      <div class="hero-text"><h1 style="font-size:16px;">Pelatihan SMAP ISO 37001:2025</h1><p id="slide-user-label"></p></div>
+      <div class="hero-text"><h1 style="font-size:16px;">Pelatihan SMAP ISO 37001</h1><p id="slide-user-label"></p></div>
       <div style="margin-left:auto;">
         <span id="slide-progress-pct" style="font-size:13px; font-weight:700; color:var(--gold);"></span>
       </div>
@@ -668,126 +668,118 @@ let state = {
 //  SLIDES DATA (8 Modul, 28 Slide)
 // =============================================
 const SLIDES = [
-  // ═══════════════════════════════════════════════════════
   // KLASTER 1: DASAR SMAP ISO 37001:2025
-  // ═══════════════════════════════════════════════════════
   {
-    module: 'Klaster 1 – Modul 1', topic: 'Dasar SMAP ISO 37001:2025',
-    title: 'Pengantar ISO 37001:2025 – Sistem Manajemen Anti Penyuapan',
+    module: 'Klaster 1', topic: 'Dasar SMAP ISO 37001:2025',
+    title: 'Pengantar ISO 37001:2025 - Sistem Manajemen Anti Penyuapan',
     subtitle: 'Edisi terbaru Februari 2025 dan perubahan utama dari ISO 37001:2016',
-    icon: '🏛️', iconLabel: 'ISO 37001:2025',
+    icon: '🏛', iconLabel: 'ISO 37001',
     content: () => `
-      <div class="slide-visual"><div class="slide-visual-content"><div>🏛️ 🔒 ✅</div><h3>ISO 37001:2025 – Anti-Bribery Management System</h3></div></div>
+      <div class="slide-visual"><div class="slide-visual-content"><div>🔒 ✅ 🏛</div><h3>ISO 37001:2025 – Anti-Bribery Management System</h3></div></div>
       <div class="highlight-box"><div class="hb-label">Definisi & Tujuan (ISO 37001:2025)</div>
       <p>ISO 37001 adalah standar internasional yang menetapkan persyaratan dan panduan untuk <strong>mencegah, mendeteksi, dan merespons penyuapan</strong> melalui implementasi Sistem Manajemen Anti Penyuapan (SMAP). Edisi 2025 diterbitkan Februari 2025, menggantikan ISO 37001:2016.</p></div>
       <ul class="content-list">
-        <li><span class="bullet">①</span><span><strong>Edisi Baru Februari 2025</strong> – Seluruh sertifikasi ISO 37001:2016 wajib bertransisi ke edisi 2025 paling lambat <strong>28 Februari 2027</strong></span></li>
-        <li><span class="bullet">②</span><span><strong>Struktur Harmonisasi (HS)</strong> – Diselaraskan dengan ISO 37301 (compliance), ISO 37000 (governance), dan ISO/TS 37008 (investigasi internal), memudahkan integrasi multi-standar</span></li>
-        <li><span class="bullet">③</span><span><strong>Budaya Anti Penyuapan (5.1.3)</strong> – Inovasi utama: penyuapan bukan hanya soal prosedur, tapi juga nilai, perilaku, dan praktik harian seluruh organisasi</span></li>
-        <li><span class="bullet">④</span><span><strong>Fungsi Anti Penyuapan</strong> – Nama "compliance function" diganti "anti-bribery function" (5.3.2) dengan tanggung jawab dan independensi operasional yang lebih jelas</span></li>
+        <li><span class="bullet">1</span><span><strong>Edisi Baru Februari 2025</strong> – Seluruh sertifikasi ISO 37001:2016 wajib bertransisi ke edisi 2025 paling lambat <strong>28 Februari 2027</strong></span></li>
+        <li><span class="bullet">2</span><span><strong>Struktur Harmonisasi</strong> – Diselaraskan dengan ISO 37301, ISO 37000, dan ISO/TS 37008, memudahkan integrasi multi-standar</span></li>
+        <li><span class="bullet">3</span><span><strong>Budaya Anti Penyuapan (5.1.3)</strong> – Inovasi utama: penyuapan bukan hanya soal prosedur, tapi juga nilai dan perilaku harian organisasi</span></li>
+        <li><span class="bullet">4</span><span><strong>Fungsi Anti Penyuapan</strong> – Istilah "compliance function" diganti "anti-bribery function" (5.3.2) dengan tanggung jawab yang lebih jelas</span></li>
       </ul>
+      <div class="highlight-box" style="border-left-color:var(--gold); background:var(--gold-light);">
+        <div class="hb-label" style="color:var(--gold-dark);">Konteks Indonesia</div>
+        <p style="color:var(--navy);">UU No. 11/1980 Anti Suap, UU No. 31/1999 jo 20/2001 Anti Korupsi, Perpres No. 54/2018 Stranas PK menjadi landasan hukum penerapan SMAP di Indonesia.</p>
+      </div>
     `
   },
   {
-    module: 'Klaster 1 – Modul 2', topic: 'Dasar SMAP ISO 37001:2025',
+    module: 'Klaster 1', topic: 'Dasar SMAP ISO 37001:2025',
     title: 'Definisi Penyuapan & Konteks Organisasi',
-    subtitle: 'Memahami ruang lingkup penyuapan dan analisis konteks organisasi dalam ISO 37001:2025',
+    subtitle: 'Memahami ruang lingkup penyuapan dan analisis konteks dalam ISO 37001:2025',
     icon: '🔍', iconLabel: 'Konteks',
     content: () => `
       <div class="highlight-box"><div class="hb-label">Definisi Penyuapan (ISO 37001:2025)</div>
-      <p>Penyuapan adalah penawaran, pemberian, penerimaan, atau permohonan keuntungan yang tidak semestinya baik langsung maupun tidak langsung — apapun nilainya — sebagai bujukan atau hadiah agar seseorang bertindak atau tidak bertindak tidak sesuai dengan kewajibannya.</p></div>
+      <p>Penyuapan adalah penawaran, pemberian, penerimaan, atau permohonan keuntungan yang tidak semestinya baik langsung maupun tidak langsung sebagai bujukan atau hadiah agar seseorang bertindak tidak sesuai kewajibannya.</p></div>
       <div class="info-grid">
-        <div class="info-card"><div class="ic-icon">🏢</div><div class="ic-title">Klausul 4.1 – Konteks Organisasi</div><div class="ic-desc">Memahami isu internal/eksternal (termasuk perubahan iklim & faktor lingkungan – baru di 2025) yang relevan dengan risiko penyuapan</div></div>
-        <div class="info-card"><div class="ic-icon">👥</div><div class="ic-title">Klausul 4.2 – Pihak Berkepentingan</div><div class="ic-desc">Mengidentifikasi kebutuhan dan harapan pihak berkepentingan; menentukan persyaratan hukum dan regulasi anti penyuapan yang berlaku</div></div>
-        <div class="info-card"><div class="ic-icon">📋</div><div class="ic-title">Klausul 4.3 – Ruang Lingkup SMAP</div><div class="ic-desc">Menetapkan batas dan penerapan SMAP; mempertimbangkan area berisiko tinggi penyuapan dalam aktivitas bisnis</div></div>
-        <div class="info-card"><div class="ic-icon">⚖️</div><div class="ic-title">Regulasi Indonesia</div><div class="ic-desc">UU No. 11/1980 Anti Suap, UU No. 31/1999 jo 20/2001 Anti Korupsi, Perpres No. 54/2018 Stranas PK</div></div>
-      </div>
-      <div class="highlight-box" style="border-left-color:var(--gold); background:var(--gold-light);">
-        <div class="hb-label" style="color:var(--gold-dark);">Perubahan Klausul 4.1 di 2025</div>
-        <p style="color:var(--navy);">ISO 37001:2025 secara eksplisit menambahkan pertimbangan <strong>perubahan iklim</strong> sebagai faktor konteks yang perlu dianalisis — merefleksikan komitmen ESG dalam tata kelola anti penyuapan modern.</p>
+        <div class="info-card"><div class="ic-icon">🏢</div><div class="ic-title">Klausul 4.1 – Konteks Organisasi</div><div class="ic-desc">Memahami isu internal/eksternal (termasuk perubahan iklim – baru di 2025) yang relevan dengan risiko penyuapan</div></div>
+        <div class="info-card"><div class="ic-icon">👥</div><div class="ic-title">Klausul 4.2 – Pihak Berkepentingan</div><div class="ic-desc">Mengidentifikasi kebutuhan dan harapan pihak berkepentingan; menentukan persyaratan hukum anti penyuapan yang berlaku</div></div>
+        <div class="info-card"><div class="ic-icon">📋</div><div class="ic-title">Klausul 4.3 – Ruang Lingkup SMAP</div><div class="ic-desc">Menetapkan batas dan penerapan SMAP; mempertimbangkan area berisiko tinggi penyuapan</div></div>
+        <div class="info-card"><div class="ic-icon">🌱</div><div class="ic-title">Perubahan Klausul 4.1 di 2025</div><div class="ic-desc">ISO 37001:2025 secara eksplisit menambahkan pertimbangan perubahan iklim sebagai faktor konteks yang perlu dianalisis</div></div>
       </div>
     `
   },
   {
-    module: 'Klaster 1 – Modul 3', topic: 'Dasar SMAP ISO 37001:2025',
+    module: 'Klaster 1', topic: 'Dasar SMAP ISO 37001:2025',
     title: 'Kepemimpinan & Komitmen Top Management',
     subtitle: 'Peran pimpinan tertinggi dan governing body dalam ISO 37001:2025',
     icon: '👑', iconLabel: 'Leadership',
     content: () => `
       <div class="highlight-box"><div class="hb-label">Klausul 5 – Leadership (Perubahan Signifikan 2025)</div>
-      <p>ISO 37001:2025 <strong>meningkatkan keterlibatan governing body dan top management</strong> secara signifikan — pimpinan tidak hanya menetapkan kebijakan, tetapi aktif memimpin pengawasan sistem manajemen dan memastikan hasilnya tercapai.</p></div>
+      <p>ISO 37001:2025 meningkatkan keterlibatan governing body dan top management secara signifikan – pimpinan aktif memimpin pengawasan sistem dan memastikan hasilnya tercapai.</p></div>
       <ul class="content-list">
-        <li><span class="bullet">5.1</span><span><strong>Top Management</strong> – Wajib menunjukkan leadership dan komitmen dengan memastikan kebijakan anti penyuapan selaras dengan tujuan organisasi; menyediakan sumber daya yang memadai</span></li>
-        <li><span class="bullet">5.1.3</span><span><strong>Anti-Bribery Culture (BARU)</strong> – Klausul khusus budaya anti penyuapan: mendorong transparansi, nilai integritas, dan perilaku etis sebagai bagian dari DNA organisasi</span></li>
-        <li><span class="bullet">5.2</span><span><strong>Kebijakan Anti Penyuapan</strong> – Wajib tertulis, dikomunikasikan kepada seluruh personel dan mitra bisnis; menyatakan komitmen zero tolerance terhadap penyuapan</span></li>
-        <li><span class="bullet">5.3.2</span><span><strong>Anti-Bribery Function</strong> – Fungsi yang bertanggung jawab atas operasionalisasi SMAP; harus independen dari operasional; berwenang melapor langsung ke pimpinan tertinggi</span></li>
+        <li><span class="bullet">5.1</span><span><strong>Top Management</strong> – Wajib menunjukkan komitmen dengan memastikan kebijakan anti penyuapan selaras tujuan organisasi dan menyediakan sumber daya memadai</span></li>
+        <li><span class="bullet">5.1.3</span><span><strong>Anti-Bribery Culture (BARU)</strong> – Klausul khusus budaya anti penyuapan: mendorong transparansi, nilai integritas, dan perilaku etis sebagai bagian DNA organisasi</span></li>
+        <li><span class="bullet">5.2</span><span><strong>Kebijakan Anti Penyuapan</strong> – Wajib tertulis, dikomunikasikan kepada seluruh personel dan mitra bisnis; menyatakan komitmen zero tolerance</span></li>
+        <li><span class="bullet">5.3.2</span><span><strong>Anti-Bribery Function</strong> – Fungsi yang bertanggung jawab atas operasionalisasi SMAP; harus independen; berwenang melapor langsung ke pimpinan</span></li>
       </ul>
       <div class="highlight-box" style="border-left-color:var(--green); background:var(--green-light);">
-        <div class="hb-label" style="color:#166534;">Prinsip: "Tone from the Top"</div>
-        <p style="color:#166534;">Efektivitas SMAP sangat bergantung pada kesungguhan pimpinan tertinggi. Pimpinan yang secara konsisten menunjukkan integritas akan menciptakan budaya di mana pegawai merasa aman untuk menolak penyuapan dan melaporkan pelanggaran.</p>
+        <div class="hb-label" style="color:#166534;">Prinsip: Tone from the Top</div>
+        <p style="color:#166534;">Efektivitas SMAP sangat bergantung pada kesungguhan pimpinan. Pimpinan yang konsisten menunjukkan integritas menciptakan budaya di mana pegawai berani menolak penyuapan dan melaporkan pelanggaran.</p>
       </div>
     `
   },
-
-  // ═══════════════════════════════════════════════════════
-  // KLASTER 2: TATA KELOLA & KEBIJAKAN ANTI PENYUAPAN
-  // ═══════════════════════════════════════════════════════
+  // KLASTER 2: TATA KELOLA & KEBIJAKAN
   {
-    module: 'Klaster 2 – Modul 1', topic: 'Tata Kelola & Kebijakan Anti Penyuapan',
+    module: 'Klaster 2', topic: 'Tata Kelola & Kebijakan Anti Penyuapan',
     title: 'Kebijakan & Program Anti Penyuapan',
     subtitle: 'Elemen kebijakan SMAP yang efektif sesuai ISO 37001:2025',
     icon: '📋', iconLabel: 'Kebijakan',
     content: () => `
       <ul class="content-list">
-        <li><span class="bullet">①</span><span><strong>Kebijakan Zero Tolerance</strong> – Pernyataan tegas bahwa penyuapan dalam bentuk apapun tidak dapat ditoleransi; berlaku untuk seluruh personel dan mitra bisnis tanpa pengecualian</span></li>
-        <li><span class="bullet">②</span><span><strong>Code of Conduct</strong> – Panduan perilaku etis yang mejabarkan situasi berisiko penyuapan dan tindakan yang harus/tidak boleh dilakukan; wajib disosialisasikan dan dipahami semua pihak</span></li>
-        <li><span class="bullet">③</span><span><strong>Program Pelatihan & Awareness (7.3)</strong> – ISO 37001:2025 <strong>memisahkan secara tegas</strong> kesadaran (awareness) dari pelatihan (training): awareness = mengenal risiko; training = keterampilan spesifik berdasarkan peran</span></li>
-        <li><span class="bullet">④</span><span><strong>Saluran Pelaporan (8.9)</strong> – Mekanisme pelaporan yang aman, rahasia, dan mudah diakses; melindungi pelapor dari pembalasan; mencakup pelaporan internal maupun ke pihak eksternal</span></li>
-        <li><span class="bullet">⑤</span><span><strong>Prosedur Penerimaan Hadiah & Hiburan</strong> – Kebijakan tertulis batas nilai yang dapat diterima/diberikan; mekanisme persetujuan; pencatatan dalam register</span></li>
-        <li><span class="bullet">⑥</span><span><strong>Tinjauan Manajemen Berkala</strong> – Top management wajib meninjau kinerja SMAP minimal setahun sekali; memastikan kecukupan, kelayakan, dan efektivitas sistem</span></li>
+        <li><span class="bullet">1</span><span><strong>Kebijakan Zero Tolerance</strong> – Pernyataan tegas bahwa penyuapan dalam bentuk apapun tidak dapat ditoleransi; berlaku untuk seluruh personel dan mitra bisnis</span></li>
+        <li><span class="bullet">2</span><span><strong>Code of Conduct</strong> – Panduan perilaku etis yang menjabarkan situasi berisiko penyuapan; wajib disosialisasikan dan dipahami semua pihak</span></li>
+        <li><span class="bullet">3</span><span><strong>Program Pelatihan & Awareness (7.3)</strong> – ISO 37001:2025 memisahkan secara tegas kesadaran (awareness) dari pelatihan (training) berdasarkan peran dan risiko jabatan</span></li>
+        <li><span class="bullet">4</span><span><strong>Saluran Pelaporan (8.9)</strong> – Mekanisme pelaporan yang aman, rahasia, dan mudah diakses; melindungi pelapor dari pembalasan</span></li>
+        <li><span class="bullet">5</span><span><strong>Prosedur Hadiah & Hiburan</strong> – Kebijakan tertulis batas nilai yang dapat diterima/diberikan; mekanisme persetujuan; pencatatan dalam register</span></li>
+        <li><span class="bullet">6</span><span><strong>Tinjauan Manajemen Berkala</strong> – Top management wajib meninjau kinerja SMAP minimal setahun sekali untuk memastikan efektivitas sistem</span></li>
       </ul>
     `
   },
   {
-    module: 'Klaster 2 – Modul 2', topic: 'Tata Kelola & Kebijakan Anti Penyuapan',
+    module: 'Klaster 2', topic: 'Tata Kelola & Kebijakan Anti Penyuapan',
     title: 'Pengendalian Mitra Bisnis & Pihak Ketiga',
     subtitle: 'Due diligence dan pengelolaan risiko penyuapan melalui rantai pasok',
     icon: '🤝', iconLabel: 'Third Party',
     content: () => `
       <div class="highlight-box"><div class="hb-label">Klausul 8.2 – Due Diligence (Uji Tuntas)</div>
-      <p>ISO 37001:2025 mengharuskan organisasi melakukan <strong>due diligence berbasis risiko</strong> terhadap mitra bisnis — vendor, distributor, agen, konsultan, mitra joint venture, dan kontraktor — sebelum menjalin hubungan bisnis dan secara berkala selama hubungan berlangsung.</p></div>
+      <p>ISO 37001:2025 mengharuskan due diligence berbasis risiko terhadap mitra bisnis – vendor, distributor, agen, konsultan, dan kontraktor – sebelum menjalin dan selama hubungan bisnis berlangsung.</p></div>
       <div class="info-grid">
-        <div class="info-card"><div class="ic-icon">🔎</div><div class="ic-title">Kategorisasi Risiko Mitra</div><div class="ic-desc">Klasifikasikan mitra berdasarkan eksposur risiko penyuapan: tinggi, sedang, rendah — intensitas due diligence disesuaikan</div></div>
-        <div class="info-card"><div class="ic-icon">📝</div><div class="ic-title">Klausul Anti Penyuapan</div><div class="ic-desc">Cantumkan klausul anti penyuapan dalam kontrak: representasi, jaminan, hak audit, dan ketentuan pemutusan kontrak jika terbukti menyuap</div></div>
-        <div class="info-card"><div class="ic-icon">🗂️</div><div class="ic-title">Register Mitra Berisiko</div><div class="ic-desc">Daftar mitra bisnis berisiko tinggi beserta hasil due diligence, tindak lanjut, dan jadwal pembaruan penilaian berkala</div></div>
-        <div class="info-card"><div class="ic-icon">📣</div><div class="ic-title">Sosialisasi kepada Mitra</div><div class="ic-desc">Komunikasikan kebijakan anti penyuapan dan ekspektasi kepatuhan kepada seluruh mitra bisnis; sediakan saluran pelaporan yang dapat diakses mitra</div></div>
+        <div class="info-card"><div class="ic-icon">🔎</div><div class="ic-title">Kategorisasi Risiko Mitra</div><div class="ic-desc">Klasifikasikan mitra berdasarkan eksposur risiko: tinggi, sedang, rendah – intensitas due diligence disesuaikan</div></div>
+        <div class="info-card"><div class="ic-icon">📝</div><div class="ic-title">Klausul Anti Penyuapan</div><div class="ic-desc">Cantumkan klausul anti penyuapan dalam kontrak: representasi, jaminan, hak audit, dan ketentuan pemutusan kontrak</div></div>
+        <div class="info-card"><div class="ic-icon">📋</div><div class="ic-title">Register Mitra Berisiko</div><div class="ic-desc">Daftar mitra berisiko tinggi beserta hasil due diligence, tindak lanjut, dan jadwal pembaruan penilaian berkala</div></div>
+        <div class="info-card"><div class="ic-icon">📣</div><div class="ic-title">Sosialisasi kepada Mitra</div><div class="ic-desc">Komunikasikan kebijakan anti penyuapan kepada seluruh mitra; sediakan saluran pelaporan yang dapat diakses mitra</div></div>
       </div>
     `
   },
-
-  // ═══════════════════════════════════════════════════════
   // KLASTER 3: MANAJEMEN RISIKO PENYUAPAN
-  // ═══════════════════════════════════════════════════════
   {
-    module: 'Klaster 3 – Modul 1', topic: 'Manajemen Risiko Penyuapan',
+    module: 'Klaster 3', topic: 'Manajemen Risiko Penyuapan',
     title: 'Penilaian Risiko Penyuapan (Bribery Risk Assessment)',
     subtitle: 'Metodologi identifikasi dan evaluasi risiko penyuapan berbasis ISO 37001:2025',
     icon: '⚠️', iconLabel: 'Risk Assessment',
     content: () => `
-      <div class="slide-visual" style="min-height:100px;"><div class="slide-visual-content"><div>⚠️ 🗺️ 📊</div><h3>Bribery Risk Assessment</h3></div></div>
+      <div class="slide-visual" style="min-height:100px;"><div class="slide-visual-content"><div>⚠️ 🗺 📊</div><h3>Bribery Risk Assessment</h3></div></div>
       <div class="highlight-box"><div class="hb-label">Klausul 4.5 – Penilaian Risiko Penyuapan</div>
-      <p>Penilaian risiko penyuapan adalah fondasi SMAP. Organisasi harus secara periodik mengidentifikasi, menganalisis, dan mengevaluasi risiko penyuapan yang dihadapi berdasarkan sifat, skala, dan kompleksitas kegiatannya.</p></div>
+      <p>Penilaian risiko penyuapan adalah fondasi SMAP. Organisasi harus secara periodik mengidentifikasi, menganalisis, dan mengevaluasi risiko penyuapan berdasarkan sifat, skala, dan kompleksitas kegiatannya.</p></div>
       <ul class="content-list">
-        <li><span class="bullet">🔍</span><span><strong>Identifikasi Risiko</strong> – Petakan seluruh area/proses yang berpotensi menimbulkan penyuapan: pengadaan, perizinan, pajak, ekspor, kontrak pemerintah, donasi, sponsorship</span></li>
-        <li><span class="bullet">📊</span><span><strong>Analisis Risiko</strong> – Nilai kemungkinan (likelihood) dan dampak (impact) setiap risiko; gunakan skala kualitatif atau kuantitatif; hasilkan level risiko (inherent risk)</span></li>
-        <li><span class="bullet">🛡️</span><span><strong>Evaluasi Pengendalian</strong> – Identifikasi pengendalian yang sudah ada; nilai kecukupannya dalam memitigasi risiko; hitung residual risk</span></li>
-        <li><span class="bullet">🗺️</span><span><strong>Risk Register & Peta Risiko</strong> – Dokumentasikan dalam register risiko penyuapan; visualisasikan dalam heat map; perbarui minimal setahun sekali atau saat ada perubahan signifikan</span></li>
-        <li><span class="bullet">📋</span><span><strong>Rencana Tindak Pengendalian</strong> – Tetapkan prioritas pengendalian tambahan untuk risiko tinggi; tetapkan PIC, target waktu, dan indikator keberhasilan</span></li>
+        <li><span class="bullet">🔍</span><span><strong>Identifikasi Risiko</strong> – Petakan seluruh area berisiko: pengadaan, perizinan, pajak, ekspor, kontrak pemerintah, donasi, sponsorship</span></li>
+        <li><span class="bullet">📊</span><span><strong>Analisis Risiko</strong> – Nilai kemungkinan dan dampak setiap risiko; hasilkan level risiko (inherent risk)</span></li>
+        <li><span class="bullet">🛡</span><span><strong>Evaluasi Pengendalian</strong> – Identifikasi pengendalian yang ada; nilai kecukupannya; hitung residual risk</span></li>
+        <li><span class="bullet">📋</span><span><strong>Risk Register & Heat Map</strong> – Dokumentasikan dalam register risiko; visualisasikan dalam heat map; perbarui minimal setahun sekali</span></li>
+        <li><span class="bullet">✅</span><span><strong>Rencana Tindak Pengendalian</strong> – Tetapkan prioritas pengendalian untuk risiko tinggi; tetapkan PIC, target waktu, dan indikator keberhasilan</span></li>
       </ul>
     `
   },
   {
-    module: 'Klaster 3 – Modul 2', topic: 'Manajemen Risiko Penyuapan',
+    module: 'Klaster 3', topic: 'Manajemen Risiko Penyuapan',
     title: 'Area Berisiko Tinggi & Skenario Penyuapan',
     subtitle: 'Mengenali konteks dan skenario penyuapan yang paling sering terjadi',
     icon: '🎯', iconLabel: 'Skenario',
@@ -795,135 +787,123 @@ const SLIDES = [
       <div class="info-grid">
         <div class="info-card"><div class="ic-icon">🛒</div><div class="ic-title">Pengadaan Barang & Jasa</div><div class="ic-desc">Manipulasi spesifikasi, rekayasa dokumen lelang, komisi tersembunyi kepada panitia, mark-up harga</div></div>
         <div class="info-card"><div class="ic-icon">📑</div><div class="ic-title">Perizinan & Regulasi</div><div class="ic-desc">Suap untuk percepatan izin usaha, izin ekspor, atau mendapat perlakuan preferensial dari regulator</div></div>
-        <div class="info-card"><div class="ic-icon">🌐</div><div class="ic-title">Interaksi dengan Pejabat</div><div class="ic-desc">Pemberian hadiah/hiburan kepada pejabat pemerintah; sponsorship yang tidak transparan; donasi politik</div></div>
-        <div class="info-card"><div class="ic-icon">💼</div><div class="ic-title">Proses Rekrutmen</div><div class="ic-desc">Mempekerjakan kerabat pejabat sebagai imbalan kontrak (nepotisme terstruktur); konflik kepentingan tidak dideklarasikan — baru dipertegas klausul 7.2.2.1 e)</div></div>
+        <div class="info-card"><div class="ic-icon">🌐</div><div class="ic-title">Interaksi dengan Pejabat</div><div class="ic-desc">Pemberian hadiah/hiburan kepada pejabat pemerintah; sponsorship tidak transparan; donasi politik</div></div>
+        <div class="info-card"><div class="ic-icon">👤</div><div class="ic-title">Proses Rekrutmen (7.2.2.1e)</div><div class="ic-desc">Mempekerjakan kerabat pejabat sebagai imbalan kontrak; konflik kepentingan tidak dideklarasikan – dipertegas di 2025</div></div>
         <div class="info-card"><div class="ic-icon">💰</div><div class="ic-title">Fasilitasi Pembayaran</div><div class="ic-desc">Pembayaran kecil kepada pejabat rendah untuk memperlancar prosedur rutin yang sebenarnya merupakan hak</div></div>
         <div class="info-card"><div class="ic-icon">📊</div><div class="ic-title">Pelaporan Keuangan</div><div class="ic-desc">Pencatatan palsu, dana gelap (slush fund), atau transaksi off-books untuk menyembunyikan pembayaran suap</div></div>
       </div>
     `
   },
-
-  // ═══════════════════════════════════════════════════════
-  // KLASTER 4: DUE DILIGENCE, CoI & GRATIFIKASI
-  // ═══════════════════════════════════════════════════════
+  // KLASTER 4: DUE DILIGENCE & GRATIFIKASI
   {
-    module: 'Klaster 4 – Modul 1', topic: 'Due Diligence, CoI & Gratifikasi',
+    module: 'Klaster 4', topic: 'Due Diligence, Konflik Kepentingan & Gratifikasi',
     title: 'Due Diligence Anti Penyuapan',
     subtitle: 'Prosedur uji tuntas terhadap personel dan mitra bisnis',
     icon: '🔬', iconLabel: 'Due Diligence',
     content: () => `
       <div class="highlight-box"><div class="hb-label">Klausul 8.2 – Due Diligence (ISO 37001:2025)</div>
-      <p>Due diligence harus <strong>proporsional dengan risiko penyuapan</strong> yang teridentifikasi. Semakin tinggi risiko, semakin mendalam proses uji tuntas yang diperlukan.</p></div>
+      <p>Due diligence harus proporsional dengan risiko penyuapan yang teridentifikasi. Semakin tinggi risiko, semakin mendalam proses uji tuntas yang diperlukan.</p></div>
       <ul class="content-list">
-        <li><span class="bullet">👤</span><span><strong>Due Diligence Personel</strong> – Background check, verifikasi riwayat integritas, dan deteksi konflik kepentingan saat rekrutmen terutama untuk posisi berisiko tinggi</span></li>
-        <li><span class="bullet">🏢</span><span><strong>Due Diligence Mitra Bisnis</strong> – Screening nama, reputasi, kepemilikan, dan keterlibatan dalam kasus korupsi sebelum dan selama kerjasama berlangsung</span></li>
-        <li><span class="bullet">📋</span><span><strong>Instrumen DD</strong> – Kuesioner SMAP, pemeriksaan database publik (debarment list, FCPA enforcement list), wawancara langsung, kunjungan fasilitas</span></li>
-        <li><span class="bullet">🔄</span><span><strong>Pembaruan Berkala</strong> – Due diligence bukan aktivitas sekali jalan; harus diperbarui secara berkala atau saat ada perubahan signifikan pada profil risiko mitra</span></li>
+        <li><span class="bullet">👤</span><span><strong>Due Diligence Personel</strong> – Background check, verifikasi integritas, dan deteksi konflik kepentingan saat rekrutmen terutama posisi berisiko tinggi</span></li>
+        <li><span class="bullet">🏢</span><span><strong>Due Diligence Mitra Bisnis</strong> – Screening nama, reputasi, kepemilikan, dan keterlibatan kasus korupsi sebelum dan selama kerjasama</span></li>
+        <li><span class="bullet">📋</span><span><strong>Instrumen DD</strong> – Kuesioner SMAP, pemeriksaan database publik (debarment list), wawancara langsung, kunjungan fasilitas</span></li>
+        <li><span class="bullet">🔄</span><span><strong>Pembaruan Berkala</strong> – Due diligence harus diperbarui secara berkala atau saat ada perubahan signifikan pada profil risiko mitra</span></li>
       </ul>
       <div class="highlight-box" style="border-left-color:var(--gold); background:var(--gold-light);">
-        <div class="hb-label" style="color:var(--gold-dark);">Konflik Kepentingan (Klausul 3.28 & Annex A) – Perubahan ISO 37001:2025</div>
-        <p style="color:var(--navy);">Definisi konflik kepentingan diperluas secara signifikan. Organisasi wajib memiliki <strong>register deklarasi konflik kepentingan dengan tinjauan tahunan</strong>; konflik kepentingan diakui sebagai risiko besar dalam mencegah penyuapan dan menjamin imparsialitas operasional.</p>
+        <div class="hb-label" style="color:var(--gold-dark);">Konflik Kepentingan (Klausul 3.28 & Annex A) – Perubahan 2025</div>
+        <p style="color:var(--navy);">Definisi konflik kepentingan diperluas. Organisasi wajib memiliki <strong>register deklarasi konflik kepentingan dengan tinjauan tahunan</strong> sebagai risiko besar dalam mencegah penyuapan.</p>
       </div>
     `
   },
   {
-    module: 'Klaster 4 – Modul 2', topic: 'Due Diligence, CoI & Gratifikasi',
+    module: 'Klaster 4', topic: 'Due Diligence, Konflik Kepentingan & Gratifikasi',
     title: 'Pengendalian Gratifikasi & Konflik Kepentingan',
     subtitle: 'Mekanisme pengendalian hadiah, hiburan, dan benturan kepentingan',
     icon: '🎁', iconLabel: 'Gratifikasi',
     content: () => `
       <div class="info-grid">
-        <div class="info-card"><div class="ic-icon">🎁</div><div class="ic-title">Kebijakan Hadiah & Hiburan</div><div class="ic-desc">Batas nilai maksimum yang dapat diterima/diberikan; prosedur persetujuan; register pencatatan; larangan pemberian kepada pejabat publik</div></div>
-        <div class="info-card"><div class="ic-icon">💰</div><div class="ic-title">Donasi & Sponsorship</div><div class="ic-desc">Hanya melalui saluran yang disetujui; mekanisme verifikasi latar belakang penerima; larangan donasi yang berhubungan dengan keputusan bisnis</div></div>
-        <div class="info-card"><div class="ic-icon">⚠️</div><div class="ic-title">Identifikasi CoI</div><div class="ic-desc">Pemeriksaan sistematis konflik: kepentingan finansial, hubungan keluarga, pekerjaan sampingan, atau keanggotaan organisasi yang berpotensi konflik</div></div>
-        <div class="info-card"><div class="ic-icon">📝</div><div class="ic-title">Register & Deklarasi</div><div class="ic-desc">Setiap personel mendeklarsikan potensi CoI; register diperbaharui tahunan; personel dalam posisi konflik wajib mengundurkan diri dari pengambilan keputusan</div></div>
+        <div class="info-card"><div class="ic-icon">🎁</div><div class="ic-title">Kebijakan Hadiah & Hiburan</div><div class="ic-desc">Batas nilai maksimum yang dapat diterima/diberikan; prosedur persetujuan; register pencatatan; larangan kepada pejabat publik</div></div>
+        <div class="info-card"><div class="ic-icon">💰</div><div class="ic-title">Donasi & Sponsorship</div><div class="ic-desc">Hanya melalui saluran yang disetujui; mekanisme verifikasi latar belakang penerima; larangan donasi terkait keputusan bisnis</div></div>
+        <div class="info-card"><div class="ic-icon">⚠️</div><div class="ic-title">Identifikasi CoI</div><div class="ic-desc">Pemeriksaan sistematis konflik: kepentingan finansial, hubungan keluarga, pekerjaan sampingan, atau keanggotaan organisasi</div></div>
+        <div class="info-card"><div class="ic-icon">📝</div><div class="ic-title">Register & Deklarasi</div><div class="ic-desc">Setiap personel mendeklarsikan potensi CoI; register diperbarui tahunan; personel dalam posisi konflik wajib mengundurkan diri</div></div>
       </div>
       <div class="highlight-box" style="border-left-color:var(--green); background:var(--green-light);">
         <div class="hb-label" style="color:#166534;">Konteks Indonesia</div>
-        <p style="color:#166534;">Pengendalian gratifikasi di Indonesia diatur UU No. 20/2001 (gratifikasi kepada PNS = suap jika terkait jabatan); wajib dilaporkan ke KPK dalam 30 hari melalui aplikasi GOL. Kebijakan SMAP harus selaras dengan ketentuan ini.</p>
+        <p style="color:#166534;">Gratifikasi kepada PNS wajib dilaporkan ke KPK dalam 30 hari melalui aplikasi GOL (gol.kpk.go.id). Kebijakan SMAP harus selaras dengan UU No. 20/2001 dan ketentuan KPK yang berlaku.</p>
       </div>
     `
   },
-
-  // ═══════════════════════════════════════════════════════
   // KLASTER 5: PENGENDALIAN KEUANGAN & NON-KEUANGAN
-  // ═══════════════════════════════════════════════════════
   {
-    module: 'Klaster 5', topic: 'Pengendalian Keuangan & Non-Keuangan',
+    module: 'Klaster 5', topic: 'Pengendalian Keuangan & Non-Keuangan dalam Pencegahan Penyuapan',
     title: 'Pengendalian Keuangan dalam Pencegahan Penyuapan',
     subtitle: 'Kontrol keuangan yang wajib ada dalam SMAP ISO 37001:2025',
     icon: '💰', iconLabel: 'Keuangan',
     content: () => `
       <div class="highlight-box"><div class="hb-label">Klausul 8.7 – Pengendalian Keuangan</div>
-      <p>Pengendalian keuangan adalah lapisan pertahanan kritis mencegah penyuapan karena sebagian besar suap melibatkan transaksi keuangan yang disembunyikan atau disamarkan.</p></div>
+      <p>Pengendalian keuangan adalah lapisan pertahanan kritis karena sebagian besar suap melibatkan transaksi keuangan yang disembunyikan atau disamarkan melalui pembukuan yang tidak akurat.</p></div>
       <ul class="content-list">
         <li><span class="bullet">📒</span><span><strong>Akurasi Pembukuan</strong> – Seluruh transaksi dicatat akurat dan tepat waktu; tidak ada pembayaran di luar buku (off-books); rekonsiliasi rutin</span></li>
         <li><span class="bullet">🔄</span><span><strong>Segregasi Tugas</strong> – Pemisahan fungsi: pemohon, pemberi persetujuan, dan fungsi pembayaran harus berbeda; mencegah satu orang menguasai seluruh siklus transaksi</span></li>
-        <li><span class="bullet">✅</span><span><strong>Dual Authorization</strong> – Transaksi di atas batas nilai tertentu memerlukan persetujuan ganda; batas ditetapkan berdasarkan penilaian risiko penyuapan</span></li>
-        <li><span class="bullet">🔍</span><span><strong>Analitik Transaksi</strong> – Pemantauan pola transaksi tidak wajar: pembayaran ke pihak terkait pejabat, transaksi ke negara berisiko tinggi, pembayaran tidak terdokumentasi</span></li>
-        <li><span class="bullet">💸</span><span><strong>Pelarangan Pembayaran Tunai</strong> – Meminimalkan atau melarang pembayaran tunai untuk nilai di atas batas tertentu; seluruh pembayaran melalui saluran yang dapat diaudit</span></li>
+        <li><span class="bullet">✅</span><span><strong>Dual Authorization</strong> – Transaksi di atas batas nilai tertentu memerlukan persetujuan ganda berdasarkan penilaian risiko penyuapan</span></li>
+        <li><span class="bullet">🔍</span><span><strong>Analitik Transaksi</strong> – Pemantauan pola tidak wajar: pembayaran ke pihak terkait pejabat, transaksi ke negara berisiko tinggi, pembayaran tidak terdokumentasi</span></li>
+        <li><span class="bullet">💸</span><span><strong>Pelarangan Pembayaran Tunai</strong> – Meminimalkan atau melarang pembayaran tunai di atas batas tertentu; seluruh pembayaran melalui saluran yang dapat diaudit</span></li>
       </ul>
     `
   },
   {
-    module: 'Klaster 5', topic: 'Pengendalian Keuangan & Non-Keuangan',
+    module: 'Klaster 5', topic: 'Pengendalian Keuangan & Non-Keuangan dalam Pencegahan Penyuapan',
     title: 'Pengendalian Non-Keuangan dalam SMAP',
     subtitle: 'Kontrol operasional, SDM, dan teknologi untuk mencegah penyuapan',
     icon: '⚙️', iconLabel: 'Non-Keuangan',
     content: () => `
       <div class="info-grid">
-        <div class="info-card"><div class="ic-icon">📋</div><div class="ic-title">Prosedur & SOP</div><div class="ic-desc">SOP untuk area berisiko tinggi: pengadaan, pemberian izin, penetapan harga, seleksi mitra; memastikan tidak ada celah diskresi berlebihan</div></div>
-        <div class="info-card"><div class="ic-icon">👥</div><div class="ic-title">Manajemen SDM</div><div class="ic-desc">Rotasi jabatan untuk posisi berisiko; evaluasi kinerja berbasis integritas; sanksi tegas untuk pelanggaran SMAP</div></div>
-        <div class="info-card"><div class="ic-icon">💻</div><div class="ic-title">Kontrol Sistem IT</div><div class="ic-desc">Pembatasan akses sistem berdasarkan kebutuhan (need-to-know); audit trail digital; enkripsi dokumen sensitif</div></div>
-        <div class="info-card"><div class="ic-icon">🗂️</div><div class="ic-title">Manajemen Dokumen</div><div class="ic-desc">Retensi dokumen sesuai regulasi; tidak ada penghapusan dokumen sepihak; akses dokumen terkontrol dan tercatat</div></div>
-        <div class="info-card"><div class="ic-icon">📢</div><div class="ic-title">Komunikasi Internal</div><div class="ic-desc">Kampanye integritas berkala; nilai anti penyuapan dalam onboarding; town hall tentang komitmen anti korupsi</div></div>
-        <div class="info-card"><div class="ic-icon">🌱</div><div class="ic-title">Budaya Anti Penyuapan</div><div class="ic-desc">Klausul 5.1.3 ISO 37001:2025: membangun lingkungan di mana pegawai merasa aman menolak suap dan melaporkan pelanggaran tanpa takut pembalasan</div></div>
+        <div class="info-card"><div class="ic-icon">📋</div><div class="ic-title">Prosedur & SOP</div><div class="ic-desc">SOP untuk area berisiko tinggi: pengadaan, perizinan, penetapan harga, seleksi mitra; tidak ada celah diskresi berlebihan</div></div>
+        <div class="info-card"><div class="ic-icon">👤</div><div class="ic-title">Manajemen SDM</div><div class="ic-desc">Rotasi jabatan untuk posisi berisiko; evaluasi kinerja berbasis integritas; sanksi tegas untuk pelanggaran SMAP</div></div>
+        <div class="info-card"><div class="ic-icon">💻</div><div class="ic-title">Kontrol Sistem IT</div><div class="ic-desc">Pembatasan akses berdasarkan kebutuhan; audit trail digital; enkripsi dokumen sensitif</div></div>
+        <div class="info-card"><div class="ic-icon">📣</div><div class="ic-title">Komunikasi Internal</div><div class="ic-desc">Kampanye integritas berkala; nilai anti penyuapan dalam onboarding; komitmen anti korupsi dari pimpinan</div></div>
+        <div class="info-card"><div class="ic-icon">🌱</div><div class="ic-title">Budaya Anti Penyuapan</div><div class="ic-desc">Klausul 5.1.3 ISO 37001:2025: lingkungan di mana pegawai merasa aman menolak suap dan melaporkan pelanggaran</div></div>
+        <div class="info-card"><div class="ic-icon">📂</div><div class="ic-title">Manajemen Dokumen</div><div class="ic-desc">Retensi dokumen sesuai regulasi; tidak ada penghapusan sepihak; akses dokumen terkontrol dan tercatat</div></div>
       </div>
     `
   },
-
-  // ═══════════════════════════════════════════════════════
   // KLASTER 6: PELAPORAN & INVESTIGASI
-  // ═══════════════════════════════════════════════════════
   {
-    module: 'Klaster 6', topic: 'Pelaporan, Investigasi & Tindak Lanjut',
+    module: 'Klaster 6', topic: 'Pelaporan, Investigasi & Tindak Lanjut Dugaan Penyuapan',
     title: 'Sistem Pelaporan Dugaan Penyuapan',
     subtitle: 'Mekanisme pelaporan yang efektif dan perlindungan pelapor dalam SMAP',
     icon: '📣', iconLabel: 'Pelaporan',
     content: () => `
       <div class="highlight-box"><div class="hb-label">Klausul 8.9 – Raising Concerns & Whistleblowing</div>
-      <p>ISO 37001:2025 mewajibkan adanya mekanisme yang memungkinkan personel dan mitra bisnis melaporkan dugaan penyuapan secara <strong>rahasia dan tanpa risiko pembalasan</strong> (non-retaliation).</p></div>
+      <p>ISO 37001:2025 mewajibkan mekanisme yang memungkinkan personel dan mitra bisnis melaporkan dugaan penyuapan secara <strong>rahasia dan tanpa risiko pembalasan</strong> (non-retaliation).</p></div>
       <ul class="content-list">
-        <li><span class="bullet">📱</span><span><strong>Saluran Pelaporan Multi-Channel</strong> – Hotline telepon, platform digital anonim, email khusus, kotak aduan fisik; memastikan aksesibilitas 24/7</span></li>
-        <li><span class="bullet">🔒</span><span><strong>Kerahasiaan & Non-Retaliation</strong> – Identitas pelapor dijaga ketat; perlindungan dari PHK, demosi, atau intimidasi; kebijakan perlindungan pelapor tertulis dan dikomunikasikan</span></li>
-        <li><span class="bullet">✅</span><span><strong>Konfirmasi Penerimaan</strong> – Setiap laporan dikonfirmasi diterima dalam waktu yang ditetapkan; pelapor diberitahu progres tanpa membocorkan informasi sensitif</span></li>
-        <li><span class="bullet">📊</span><span><strong>Pencatatan & Klasifikasi</strong> – Setiap laporan dicatat dan diklasifikasikan berdasarkan jenis dugaan, sumber laporan, dan tingkat risiko; diproses sesuai prosedur</span></li>
+        <li><span class="bullet">📱</span><span><strong>Saluran Pelaporan Multi-Channel</strong> – Hotline telepon, platform digital anonim, email khusus, kotak aduan fisik; aksesibilitas 24/7</span></li>
+        <li><span class="bullet">🔒</span><span><strong>Kerahasiaan & Non-Retaliation</strong> – Identitas pelapor dijaga ketat; perlindungan dari PHK, demosi, atau intimidasi; kebijakan perlindungan pelapor tertulis</span></li>
+        <li><span class="bullet">✅</span><span><strong>Konfirmasi Penerimaan</strong> – Setiap laporan dikonfirmasi diterima dalam waktu yang ditetapkan; pelapor diberitahu progres penanganan</span></li>
+        <li><span class="bullet">📊</span><span><strong>Pencatatan & Klasifikasi</strong> – Setiap laporan dicatat dan diklasifikasikan berdasarkan jenis dugaan, sumber laporan, dan tingkat risiko</span></li>
       </ul>
     `
   },
   {
-    module: 'Klaster 6', topic: 'Pelaporan, Investigasi & Tindak Lanjut',
+    module: 'Klaster 6', topic: 'Pelaporan, Investigasi & Tindak Lanjut Dugaan Penyuapan',
     title: 'Investigasi & Tindak Lanjut Penyuapan',
     subtitle: 'Prosedur investigasi internal sesuai ISO/TS 37008 dan ISO 37001:2025',
     icon: '🔎', iconLabel: 'Investigasi',
     content: () => `
-      <div class="highlight-box"><div class="hb-label">ISO/TS 37008 – Internal Investigations (Terintegrasi di ISO 37001:2025)</div>
-      <p>ISO 37001:2025 diselaraskan dengan ISO/TS 37008 tentang investigasi internal, memberikan panduan lebih komprehensif tentang bagaimana dugaan penyuapan harus diselidiki secara adil, efektif, dan terdokumentasi.</p></div>
       <ul class="content-list">
-        <li><span class="bullet">①</span><span><strong>Penilaian Awal</strong> – Tentukan apakah laporan memerlukan investigasi formal; identifikasi potensi konflik kepentingan investigator; dokumentasikan keputusan</span></li>
-        <li><span class="bullet">②</span><span><strong>Pembentukan Tim Investigasi</strong> – Independen dari area yang diinvestigasi; kompetensi forensik dan hukum; kerahasiaan proses dijaga ketat</span></li>
-        <li><span class="bullet">③</span><span><strong>Pengumpulan Bukti</strong> – Interview, review dokumen, analisis transaksi keuangan; chain of custody terjaga; bukti digital diamankan dengan forensik yang tepat</span></li>
-        <li><span class="bullet">④</span><span><strong>Laporan Investigasi</strong> – Fakta temuan, analisis, kesimpulan, dan rekomendasi; disampaikan ke top management; dilindungi kerahasiaannya</span></li>
-        <li><span class="bullet">⑤</span><span><strong>Tindak Lanjut</strong> – Sanksi disiplin/hukum jika terbukti; perbaikan sistem; notifikasi pihak eksternal (KPK, aparat hukum) jika diperlukan</span></li>
+        <li><span class="bullet">1</span><span><strong>Penilaian Awal</strong> – Tentukan apakah laporan memerlukan investigasi formal; identifikasi potensi konflik kepentingan investigator; dokumentasikan keputusan</span></li>
+        <li><span class="bullet">2</span><span><strong>Pembentukan Tim Investigasi</strong> – Independen dari area yang diinvestigasi; kompetensi forensik dan hukum; kerahasiaan proses dijaga ketat</span></li>
+        <li><span class="bullet">3</span><span><strong>Pengumpulan Bukti</strong> – Interview, review dokumen, analisis transaksi keuangan; chain of custody terjaga; bukti digital diamankan dengan benar</span></li>
+        <li><span class="bullet">4</span><span><strong>Laporan Investigasi</strong> – Fakta temuan, analisis, kesimpulan, dan rekomendasi; disampaikan ke top management; dilindungi kerahasiaannya</span></li>
+        <li><span class="bullet">5</span><span><strong>Tindak Lanjut</strong> – Sanksi disiplin/hukum jika terbukti; perbaikan sistem; notifikasi KPK atau aparat hukum jika diperlukan</span></li>
       </ul>
+      <div class="highlight-box"><div class="hb-label">ISO/TS 37008 – Investigasi Internal</div>
+      <p>ISO 37001:2025 diselaraskan dengan ISO/TS 37008 memberikan panduan komprehensif tentang bagaimana dugaan penyuapan diselidiki secara adil, efektif, dan terdokumentasi.</p></div>
     `
   },
-
-  // ═══════════════════════════════════════════════════════
   // KLASTER 7: AUDIT INTERNAL & PERBAIKAN
-  // ═══════════════════════════════════════════════════════
   {
-    module: 'Klaster 7', topic: 'Audit Internal & Perbaikan Berkelanjutan',
+    module: 'Klaster 7', topic: 'Audit Internal & Perbaikan Berkelanjutan SMAP ISO 37001',
     title: 'Audit Internal SMAP ISO 37001:2025',
     subtitle: 'Metodologi dan frekuensi audit internal untuk memastikan kepatuhan SMAP',
     icon: '📊', iconLabel: 'Audit',
@@ -932,28 +912,23 @@ const SLIDES = [
       <p>Audit internal SMAP memberikan keyakinan independen kepada top management bahwa sistem berjalan sesuai persyaratan ISO 37001:2025, kebijakan internal, dan regulasi yang berlaku.</p></div>
       <ul class="content-list">
         <li><span class="bullet">📅</span><span><strong>Program Audit Berbasis Risiko</strong> – Frekuensi dan cakupan audit disesuaikan dengan profil risiko penyuapan; area berisiko tinggi diaudit lebih sering</span></li>
-        <li><span class="bullet">🔍</span><span><strong>Cakupan Audit</strong> – Kecukupan dan efektivitas kebijakan, prosedur due diligence, pengendalian keuangan, saluran pelaporan, pelatihan, dan dokumentasi SMAP</span></li>
-        <li><span class="bullet">👤</span><span><strong>Independensi Auditor</strong> – Auditor internal tidak boleh mengaudit area di mana mereka terlibat; gunakan konsultan eksternal untuk audit khusus area sensitif</span></li>
-        <li><span class="bullet">📋</span><span><strong>Laporan & Rekomendasi</strong> – Temuan dikategorikan berdasarkan tingkat keparahan; rekomendasi korektif ditetapkan bersama target waktu; dimonitor penyelesaiannya</span></li>
-        <li><span class="bullet">🔄</span><span><strong>Tindak Lanjut Audit</strong> – Verifikasi pelaksanaan rekomendasi; eskalasi ke top management jika tidak ditindaklanjuti; dokumentasi status temuan dalam register audit</span></li>
+        <li><span class="bullet">🔍</span><span><strong>Cakupan Audit</strong> – Kecukupan dan efektivitas kebijakan, prosedur due diligence, pengendalian keuangan, saluran pelaporan, dan dokumentasi SMAP</span></li>
+        <li><span class="bullet">👤</span><span><strong>Independensi Auditor</strong> – Auditor tidak boleh mengaudit area di mana mereka terlibat; gunakan konsultan eksternal untuk area sensitif</span></li>
+        <li><span class="bullet">📋</span><span><strong>Laporan & Rekomendasi</strong> – Temuan dikategorikan berdasarkan tingkat keparahan; rekomendasi korektif ditetapkan bersama target waktu</span></li>
       </ul>
     `
   },
   {
-    module: 'Klaster 7', topic: 'Audit Internal & Perbaikan Berkelanjutan',
+    module: 'Klaster 7', topic: 'Audit Internal & Perbaikan Berkelanjutan SMAP ISO 37001',
     title: 'Tinjauan Manajemen & Perbaikan Berkelanjutan SMAP',
     subtitle: 'Siklus PDCA dalam memastikan efektivitas SMAP yang berkelanjutan',
     icon: '🌱', iconLabel: 'Improvement',
     content: () => `
-      <div class="highlight-box" style="border-left-color:var(--green); background:var(--green-light);">
-        <div class="hb-label" style="color:#166534;">Klausul 9.3 – Management Review & Klausul 10 – Improvement</div>
-        <p style="color:#166534;">Siklus PDCA (Plan-Do-Check-Act) memastikan SMAP terus berkembang mengikuti perubahan profil risiko, regulasi, dan konteks organisasi. Perbaikan berkelanjutan adalah inti dari semua standar manajemen ISO.</p>
-      </div>
       <div class="info-grid">
         <div class="info-card"><div class="ic-icon">📊</div><div class="ic-title">Input Tinjauan Manajemen</div><div class="ic-desc">Hasil audit, insiden penyuapan, perubahan risiko, kinerja KPI SMAP, umpan balik stakeholder, perubahan regulasi</div></div>
         <div class="info-card"><div class="ic-icon">📝</div><div class="ic-title">Output Tinjauan</div><div class="ic-desc">Keputusan perbaikan kebijakan, alokasi sumber daya, perubahan cakupan SMAP, target KPI periode berikutnya</div></div>
-        <div class="info-card"><div class="ic-icon">🔄</div><div class="ic-title">Nonconformity & Corrective Action</div><div class="ic-desc">Analisis akar masalah setiap ketidaksesuaian; tindakan korektif yang menyeluruh; verifikasi efektivitas perbaikan</div></div>
-        <div class="info-card"><div class="ic-icon">🏆</div><div class="ic-title">Sertifikasi ISO 37001:2025</div><div class="ic-desc">Sertifikasi oleh lembaga terakreditasi independen; validitas 3 tahun; surveillance audit tahunan; transisi dari 2016 wajib selesai Feb 2027</div></div>
+        <div class="info-card"><div class="ic-icon">🔄</div><div class="ic-title">Corrective Action</div><div class="ic-desc">Analisis akar masalah setiap ketidaksesuaian; tindakan korektif menyeluruh; verifikasi efektivitas perbaikan</div></div>
+        <div class="info-card"><div class="ic-icon">🏆</div><div class="ic-title">Sertifikasi ISO 37001:2025</div><div class="ic-desc">Sertifikasi oleh lembaga terakreditasi independen; validitas 3 tahun; surveillance audit tahunan; transisi wajib selesai Feb 2027</div></div>
       </div>
       <div style="background:var(--navy); color:white; border-radius:var(--radius-sm); padding:16px; text-align:center; margin-top:14px;">
         <div style="font-size:15px; font-weight:700; font-family:'Lora',serif;">"Komitmen Anti Penyuapan adalah Investasi Integritas Organisasi"</div>
@@ -966,81 +941,21 @@ const SLIDES = [
 //  QUIZ DATA (15 Soal)
 // =============================================
 const QUIZ_QUESTIONS = [
-  {
-    q: "ISO 37001:2025 diterbitkan pada bulan dan tahun berapa, dan menggantikan versi sebelumnya yaitu...",
-    options: ["Januari 2025, menggantikan ISO 37001:2019","Februari 2025, menggantikan ISO 37001:2016","Maret 2025, menggantikan ISO 37001:2018","April 2025, menggantikan ISO 37001:2020"],
-    answer: 1
-  },
-  {
-    q: "Batas akhir transisi sertifikasi dari ISO 37001:2016 ke ISO 37001:2025 adalah...",
-    options: ["28 Februari 2026","30 Juni 2026","28 Februari 2027","31 Desember 2027"],
-    answer: 2
-  },
-  {
-    q: "Inovasi utama ISO 37001:2025 yang mendapatkan klausul tersendiri (5.1.3) adalah...",
-    options: ["Sistem pelaporan digital","Anti-bribery culture (Budaya Anti Penyuapan)","Manajemen risiko iklim","Audit internal berbasis AI"],
-    answer: 1
-  },
-  {
-    q: "Istilah 'anti-bribery compliance function' dalam ISO 37001:2016 diganti menjadi apa di ISO 37001:2025?",
-    options: ["Anti-corruption department","Integrity management unit","Anti-bribery function","Compliance oversight body"],
-    answer: 2
-  },
-  {
-    q: "Klausul manakah dalam ISO 37001:2025 yang mengatur Due Diligence terhadap mitra bisnis?",
-    options: ["Klausul 4.1","Klausul 5.3","Klausul 8.2","Klausul 9.1"],
-    answer: 2
-  },
-  {
-    q: "Konflik kepentingan dalam konteks ISO 37001:2025 diatur secara lebih komprehensif pada...",
-    options: ["Klausul 5.1 dan Annex B","Klausul 3.28 dan Annex A","Klausul 4.2 dan Annex C","Klausul 8.9 dan Annex D"],
-    answer: 1
-  },
-  {
-    q: "ISO 37001:2025 memisahkan dua konsep yang sebelumnya digabung dalam klausul 7.3, yaitu...",
-    options: ["Audit dan tinjauan manajemen","Kebijakan dan prosedur","Kesadaran (awareness) dan pelatihan (training)","Identifikasi dan analisis risiko"],
-    answer: 2
-  },
-  {
-    q: "Pengendalian keuangan dalam SMAP yang bertujuan mencegah satu orang menguasai seluruh siklus transaksi disebut...",
-    options: ["Dual authorization","Segregasi tugas (segregation of duties)","Internal control framework","Financial monitoring"],
-    answer: 1
-  },
-  {
-    q: "Dalam konteks Indonesia, gratifikasi kepada PNS yang berkaitan dengan jabatan wajib dilaporkan ke KPK paling lambat...",
-    options: ["7 hari kerja","14 hari kerja","30 hari kerja","60 hari kerja"],
-    answer: 2
-  },
-  {
-    q: "ISO 37001:2025 diselaraskan dengan standar ISO mana untuk penyelarasan investigasi internal?",
-    options: ["ISO 31000","ISO 37301","ISO/TS 37008","ISO 19600"],
-    answer: 2
-  },
-  {
-    q: "Dalam penilaian risiko penyuapan, 'residual risk' adalah...",
-    options: ["Risiko awal sebelum pengendalian apapun diterapkan","Risiko yang tersisa setelah pengendalian yang ada diperhitungkan","Risiko yang sudah diterima oleh pimpinan","Total kerugian akibat insiden penyuapan"],
-    answer: 1
-  },
-  {
-    q: "Salah satu area berisiko tinggi penyuapan yang dipertegas dalam klausul 7.2.2.1 e) ISO 37001:2025 adalah...",
-    options: ["Pemasaran digital","Proses rekrutmen dan kesadaran akan konflik kepentingan","Manajemen media sosial","Pengelolaan aset tetap"],
-    answer: 1
-  },
-  {
-    q: "Prinsip 'non-retaliation' dalam sistem pelaporan SMAP berarti...",
-    options: ["Laporan dapat disampaikan tanpa batas waktu","Pelapor dilindungi dari pembalasan atas laporan yang disampaikan dengan itikad baik","Investigasi harus diselesaikan tanpa ada sanksi","Tidak ada pihak yang dapat dipecat akibat investigasi"],
-    answer: 1
-  },
-  {
-    q: "Sertifikasi ISO 37001:2025 oleh lembaga terakreditasi umumnya berlaku selama...",
-    options: ["1 tahun dengan audit tahunan","2 tahun dengan audit setiap semester","3 tahun dengan surveillance audit tahunan","5 tahun dengan audit di tahun ke-3"],
-    answer: 2
-  },
-  {
-    q: "Apa yang membedakan donasi/sponsorship yang sah dari yang berpotensi menjadi sarana penyuapan dalam SMAP?",
-    options: ["Nilai nominal yang diberikan","Adanya mekanisme persetujuan, verifikasi penerima, dan tidak terkait dengan keputusan bisnis","Metode pembayaran yang digunakan","Frekuensi pemberian dalam setahun"],
-    answer: 1
-  }
+  { q: "ISO 37001:2025 diterbitkan pada bulan dan tahun berapa, menggantikan versi...", options: ["Januari 2025, menggantikan ISO 37001:2019","Februari 2025, menggantikan ISO 37001:2016","Maret 2025, menggantikan ISO 37001:2018","April 2025, menggantikan ISO 37001:2020"], answer: 1 },
+  { q: "Batas akhir transisi sertifikasi dari ISO 37001:2016 ke ISO 37001:2025 adalah...", options: ["28 Februari 2026","30 Juni 2026","28 Februari 2027","31 Desember 2027"], answer: 2 },
+  { q: "Inovasi utama ISO 37001:2025 yang mendapatkan klausul tersendiri (5.1.3) adalah...", options: ["Sistem pelaporan digital","Anti-bribery culture (Budaya Anti Penyuapan)","Manajemen risiko iklim","Audit internal berbasis AI"], answer: 1 },
+  { q: "Istilah 'anti-bribery compliance function' dalam ISO 37001:2016 diganti menjadi apa di ISO 37001:2025?", options: ["Anti-corruption department","Integrity management unit","Anti-bribery function","Compliance oversight body"], answer: 2 },
+  { q: "Klausul manakah dalam ISO 37001:2025 yang mengatur Due Diligence terhadap mitra bisnis?", options: ["Klausul 4.1","Klausul 5.3","Klausul 8.2","Klausul 9.1"], answer: 2 },
+  { q: "Konflik kepentingan dalam ISO 37001:2025 diatur lebih komprehensif pada...", options: ["Klausul 5.1 dan Annex B","Klausul 3.28 dan Annex A","Klausul 4.2 dan Annex C","Klausul 8.9 dan Annex D"], answer: 1 },
+  { q: "ISO 37001:2025 memisahkan dua konsep dalam klausul 7.3, yaitu...", options: ["Audit dan tinjauan manajemen","Kebijakan dan prosedur","Kesadaran (awareness) dan pelatihan (training)","Identifikasi dan analisis risiko"], answer: 2 },
+  { q: "Pengendalian keuangan yang mencegah satu orang menguasai seluruh siklus transaksi disebut...", options: ["Dual authorization","Segregasi tugas (segregation of duties)","Internal control framework","Financial monitoring"], answer: 1 },
+  { q: "Gratifikasi kepada PNS yang berkaitan dengan jabatan wajib dilaporkan ke KPK paling lambat...", options: ["7 hari kerja","14 hari kerja","30 hari kerja","60 hari kerja"], answer: 2 },
+  { q: "ISO 37001:2025 diselaraskan dengan standar ISO mana untuk investigasi internal?", options: ["ISO 31000","ISO 37301","ISO/TS 37008","ISO 19600"], answer: 2 },
+  { q: "Residual risk dalam konteks penilaian risiko adalah...", options: ["Risiko awal sebelum pengendalian apapun diterapkan","Risiko yang tersisa setelah pengendalian yang ada diperhitungkan","Risiko yang sudah diterima pimpinan","Total kerugian akibat insiden penyuapan"], answer: 1 },
+  { q: "Area berisiko tinggi penyuapan yang dipertegas dalam klausul 7.2.2.1 e) ISO 37001:2025 adalah...", options: ["Pemasaran digital","Proses rekrutmen dan kesadaran akan konflik kepentingan","Manajemen media sosial","Pengelolaan aset tetap"], answer: 1 },
+  { q: "Prinsip 'non-retaliation' dalam sistem pelaporan SMAP berarti...", options: ["Laporan dapat disampaikan tanpa batas waktu","Pelapor dilindungi dari pembalasan atas laporan yang disampaikan dengan itikad baik","Investigasi harus diselesaikan tanpa sanksi","Tidak ada pihak yang dapat dipecat akibat investigasi"], answer: 1 },
+  { q: "Sertifikasi ISO 37001:2025 oleh lembaga terakreditasi umumnya berlaku selama...", options: ["1 tahun","2 tahun","3 tahun dengan surveillance audit tahunan","5 tahun"], answer: 2 },
+  { q: "Yang membedakan donasi/sponsorship sah dari yang berpotensi menjadi sarana penyuapan adalah...", options: ["Nilai nominal yang diberikan","Adanya mekanisme persetujuan, verifikasi penerima, dan tidak terkait keputusan bisnis","Metode pembayaran yang digunakan","Frekuensi pemberian dalam setahun"], answer: 1 }
 ];
 
 // =============================================
@@ -1358,11 +1273,11 @@ async function drawCertificate(canvasId, nama, unit, score, certNum, tanggal) {
   ctx.fillStyle = '#555';
   ctx.fillText('telah berhasil menyelesaikan dan LULUS dalam', W/2, 305);
 
-  // ── Nama pelatihan ────────────────────── y=346
-  ctx.font = 'bold 22px Georgia, serif';
+  // ── Nama pelatihan – 2 baris tetap ────── y=340 & 368
+  ctx.font = 'bold 24px Georgia, serif';
   ctx.fillStyle = navy;
-  ctx.fillText('Pelatihan Sistem Manajemen Anti Penyuapan (SMAP)', W/2, 340);
-  ctx.fillText('ISO 37001', W/2, 368);
+  ctx.fillText('Pelatihan Sistem Manajemen Anti Penyuapan (SMAP)', W/2, 342);
+  ctx.fillText('ISO 37001', W/2, 370);
 
   // ── Penyelenggara ─────────────────────── y=388 & 410
   // Baris 1: "Yang diselenggarakan melalui e-leaning oleh Badan Pengembangan"
@@ -1467,7 +1382,7 @@ async function drawCertificatePage2(canvasId, nama, unit, tanggal) {
 
   // List of materi - clean numbered list, no bullets/circles
   const materis = [
-    'Dasar SMAP ISO 37001:2025 – Edisi Terbaru Februari 2025',
+    'Dasar SMAP ISO 37001:2025 - Edisi Terbaru Februari 2025',
     'Tata Kelola, Kepemimpinan, dan Kebijakan Anti Penyuapan',
     'Manajemen Risiko Penyuapan dan Skenario Berisiko Tinggi',
     'Due Diligence, Konflik Kepentingan, dan Pengendalian Gratifikasi',
@@ -1483,12 +1398,16 @@ async function drawCertificatePage2(canvasId, nama, unit, tanggal) {
   ctx.textAlign = 'left';
   materis.forEach((m, i) => {
     const y = listStartY + i * lineH;
+    // Number
     ctx.font = '18px Georgia, serif';
     ctx.fillStyle = '#555';
     ctx.fillText((i + 1) + '.', listX, y);
-    ctx.font = '18px Georgia, serif';
-    ctx.fillStyle = '#333';
-    ctx.fillText(m, listX + 36, y);
+    // Text - handle italic for certain parts
+    {
+      ctx.font = '18px Georgia, serif';
+      ctx.fillStyle = '#333';
+      ctx.fillText(m, listX + 36, y);
+    }
   });
 }
 
@@ -1497,6 +1416,7 @@ async function downloadCert() {
   const lastRec = state.certRecords[state.certRecords.length-1];
   const certNum = lastRec?.certNum || '';
   const certDateStr = lastRec?.dateStr || lastRec?.date || new Date().toLocaleDateString('id-ID',{day:'numeric',month:'long',year:'numeric'});
+  // Re-draw to make sure canvas is fresh before export
   await drawCertificate('cert-canvas', state.nama, state.unit, state.quizScore, certNum, certDateStr);
   const canvas1 = document.getElementById('cert-canvas');
   const link1 = document.createElement('a');
