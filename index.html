@@ -1483,15 +1483,12 @@ async function drawCertificatePage2(canvasId, nama, unit, tanggal) {
   ctx.textAlign = 'left';
   materis.forEach((m, i) => {
     const y = listStartY + i * lineH;
-    // Number
     ctx.font = '18px Georgia, serif';
     ctx.fillStyle = '#555';
     ctx.fillText((i + 1) + '.', listX, y);
-        // All items: uniform 18px font
     ctx.font = '18px Georgia, serif';
     ctx.fillStyle = '#333';
     ctx.fillText(m, listX + 36, y);
-    }
   });
 }
 
